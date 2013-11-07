@@ -3,22 +3,26 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Word Tzar</title>
-		<script src="playlist.js"></script>
+		<script src="refresh.js"></script>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<center><h1><b>Word Tzar Alpha</b></h1></center>
+		<div align="center">
 		<p>"Enter words that start with the letter "P""</p>
 		<span id="timer"></span>
-		<form>
-			<input type="text" id="songTextInput" size="40" placeholder="Enter words here">
-			<input type="button" id="startButton" value="Start">
+		<form id="test">
+			<input type="text" id="songTextInput" size="40" placeholder="Enter words here"><br>
+			<input type="button" id="startButton" value="Start" align:"center">
 			<input type="button" id="addButton" value="Submit">
 		</form>
 		
+		<ul id="missing">
+			
+		</ul>
 		<ul id="playlist">
 			
 		</ul>
-		
+		</div>
 	</body>
 </html>
