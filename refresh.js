@@ -1,16 +1,18 @@
 window.onload = init;
+var reader;
 var bigScore = 0;
+
 function init(){
 	var button = document.getElementById("addButton");
 	var button2 = document.getElementById("startButton");
 	button.onclick = handleButtonClick;
 	button2.onclick = startTimer;
 }		
-	
+
 function handleButtonClick(){
-			
 			var textInput = document.getElementById("songTextInput");
 			var songName = textInput.value;
+			if(allowedWords.indexOf(songName) >= 0);
 			if(songName==""){
 				alert("Please enter a valid word.");
 				return false;
