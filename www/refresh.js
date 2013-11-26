@@ -1,5 +1,4 @@
 window.onload = init;
-var reader;
 var bigScore = 0;
 
 function init(){
@@ -8,25 +7,25 @@ function init(){
 	button.onclick = handleButtonClick;
 	button2.onclick = startTimer;
 }		
-
+	
 function handleButtonClick(){
-			var textInput = document.getElementById("songTextInput");
-			var songName = textInput.value;
-			if(allowedWords.indexOf(songName) >= 0);
-			if(songName==""){
+			
+			var textInput = document.getElementById("textInput");
+			var wordName = textInput.value;
+			if(wordName==""){
 				alert("Please enter a valid word.");
 				return false;
 			}
-			var first = songName.charAt(0).toUpperCase();
+			var first = wordName.charAt(0).toUpperCase();
 			if(first != "P"){
 			alert("Words must start with the letter P!");
 			return false;
 			}
-			var score = songName.length * 2 + 3;
+			var score = wordName.length * 2 + 3;
 			var li = document.createElement("li");
 			bigScore = bigScore + score;
-			li.innerHTML = songName.toUpperCase() + ", " + score + " , " + "Total Score = " + bigScore;
-			var ul = document.getElementById("playlist");
+			li.innerHTML = wordName.toUpperCase() + ", " + score + " , " + "Total Score = " + bigScore;
+			var ul = document.getElementById("wordList");
 			ul.appendChild(li);
 			textInput.value = '';
 }

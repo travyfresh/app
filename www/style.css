@@ -1,0 +1,42 @@
+#wordList{
+	list-style-type: none;
+}
+
+font{
+	text-align:left;
+}
+
+#rulesButton{
+	text-align:center;
+}
+
+body{
+	background-color: #33CCFF;
+}
+
+#background {
+	width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+button{
+	background-color:#33CCFF;
+}
+
+#textRules{
+	padding: 30px;
+}
+
+#home2Button{
+	position="absolute";
+	top: 85%;
+}
